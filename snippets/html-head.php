@@ -7,12 +7,13 @@
 // copyright: Jannik Beyerstedt | http://jannikbeyerstedt.de | code@jannikbeyerstedt.de
 // license: http://www.gnu.org/licenses/gpl-3.0.txt GPLv3 License
 
-// version: 1.2.1 (14.01.2015)
+// version: 1.3.0 (22.08.2015)
 // changelog: 
 // v1.0.1: add masonry css
 // v1.1.0: add swipebox support
 // v1.2.0: bugfix: masonryitem width value was invalid
 // v1.2.1: bring back the meta_robots
+// v1.3.0: with new plugin option names
 // -------------------------------------------
 ?>
 <!DOCTYPE html>
@@ -42,7 +43,7 @@
   
   <!-- Google web fonts -->
     
-<?php if (c::get('enable_masonry')) : $width = c::get('masonry_width'); ?>
+<?php if (c::get('plg_masonry.enable')) : $width = c::get('plg_masonry.width'); ?>
   <style>
     #masonry {margin: 0 auto;}
       .masonryitem { width: <?php echo $width ?>px; margin-bottom: 10px;}
@@ -50,7 +51,7 @@
   </style>
 <?php endif; ?>
 
-<?php if (c::get('photo_lightbox')=='swipebox') : ?>
+<?php if (c::get('plg_masonry.lightbox')=='swipebox') : ?>
   <?php echo css('assets/swipebox/src/css/swipebox.css') ?>
 <?php endif; ?>
 
