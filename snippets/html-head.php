@@ -8,7 +8,7 @@
 // license: http://www.gnu.org/licenses/gpl-3.0.txt GPLv3 License
 
 // version: 1.3.0 (22.08.2015)
-// changelog: 
+// changelog:
 // v1.0.1: add masonry css
 // v1.1.0: add swipebox support
 // v1.2.0: bugfix: masonryitem width value was invalid
@@ -32,17 +32,17 @@
 <?php if ($page->meta_robots()->html() != "") : ?>
   <meta name="robots" content="<?php echo $page->meta_robots()->html() ?>">
 <?php endif; ?>
-  
+
   <link rel="shortcut icon" href="<?php echo url('favicon.ico')?>" type="image/x-icon">
-  
+
   <?php echo css('assets/bootstrap/css/bootstrap.min.css') ?>
   <?php echo css('assets/font-awesome/css/font-awesome.min.css') ?>
-  
+
   <?php echo css('assets/css/style.css') ?>
   <?php echo css('@auto') ?>
-  
+
   <!-- Google web fonts -->
-    
+
 <?php if (c::get('plg_masonry.enable')) : $width = c::get('plg_masonry.width'); ?>
   <style>
     #masonry {margin: 0 auto;}

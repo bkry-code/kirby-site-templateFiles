@@ -8,7 +8,7 @@
 // license: http://www.gnu.org/licenses/gpl-3.0.txt GPLv3 License
 
 // version: 1.0.1 (27.11.2014)
-// changelog: 
+// changelog:
 // v1.0.1: with kirbytextRaw
 // -------------------------------------------
 ?>

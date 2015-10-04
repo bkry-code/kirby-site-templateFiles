@@ -8,7 +8,7 @@
 // license: http://www.gnu.org/licenses/gpl-3.0.txt GPLv3 License
 
 // version: 1.0 (16.11.2014)
-// changelog: 
+// changelog:
 // -------------------------------------------
 ?>
 
@@ -29,4 +29,3 @@ z.B. <a href="http://www.opera.com">Opera</a>, <a href="https://www.google.de/ch
     <h1 id="logo"><?php echo $site->title() ?></h1>
   </a>
 </div></header>
-  
