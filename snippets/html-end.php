@@ -48,6 +48,9 @@
 <?php if (c::get('plg_carousel.enable')) : ?>
   <script type="text/javascript">
     $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: <?php echo c::get('plg_carousel.interval', 2000); ?>
+      });
       $('.carousel').carousel('cycle');
     });
   </script>
